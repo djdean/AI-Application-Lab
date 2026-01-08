@@ -1,2 +1,5 @@
 Day[[:space:]]1/Slides/Day1.pptx filter=lfs diff=lfs merge=lfs -text
 Day[[:space:]]1/Use[[:space:]]Cases/Day[[:space:]]1.pptx filter=lfs diff=lfs merge=lfs -text
+Day[[:space:]]2/Slides/Day filter=lfs diff=lfs merge=lfs -text
+2.pptx filter=lfs diff=lfs merge=lfs -text
+Day/[[:space:]]2/Slides/Day[[:space:]]2.pptx filter=lfs diff=lfs merge=lfs -text
