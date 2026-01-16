@@ -1,0 +1,14 @@
+# FastAPI Workshop Requirements
+# Install with: pip install -r requirements.txt
+
+# Core FastAPI dependencies
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+
+# Testing dependencies
+requests>=2.31.0
+
+# Optional: For real chart generation in Task 4 Challenge
+# Uncomment the line below if you want to generate actual chart images
+# matplotlib>=3.8.0
