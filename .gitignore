@@ -44,3 +44,6 @@ ENV/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Large files (exceed GitHub 100MB limit)
+*.pptx
