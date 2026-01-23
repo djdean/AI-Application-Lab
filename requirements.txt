@@ -1,0 +1,32 @@
+# ===== Environment & Configuration =====
+python-dotenv>=1.0.1
+# ===== Azure Core SDKs =====
+azure-identity>=1.17.0
+azure-core
+# ===== Azure AI & Search =====
+azure-search-documents
+azure-storage-blob
+azure-ai-projects
+azure-ai-agents>=1.0.0b4
+# ===== OpenAI =====
+openai
+# ===== Agent Framework (Microsoft) =====
+agent-framework
+# ===== LangChain & LangGraph =====
+langgraph>=0.1.0
+langchain-core>=0.2.0
+# ===== MCP (Model Context Protocol) =====
+mcp>=1.16.0
+fastmcp>=2.12.0
+# ===== Web Frameworks =====
+# FastAPI
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+# Streamlit
+streamlit>=1.28.0
+# ===== Utilities =====
+Pillow>=10.0.0
+typing-extensions>=4.0.0
+# ===== Testing =====
+requests>=2.31.0

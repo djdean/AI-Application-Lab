@@ -57,7 +57,68 @@ This comprehensive laboratory transforms you from an AI enthusiast into a Micros
 ## 📁 Repository Structure
 
 ```
-revise this after completion of all the contents 
+Pfizer-AI-labs/
+├── .env.template              # Environment variables template (copy to .env)
+├── .gitignore                 # Git ignore rules
+├── README.md                  # This file
+├── requirements.txt           # Python dependencies
+│
+├── Day1/                      # Day 1: Foundry Basics & Prompt Engineering
+│   ├── HandsOnTasks/
+│   │   ├── 1.PromptEngineering.md
+│   │   ├── 2.CreatingAISearchInPortal.md
+│   │   ├── 3.PlaygroundToAccessIndex.md
+│   │   └── Task 1.md
+│   ├── Slides/
+│   └── UseCases/
+│
+├── Day2/                      # Day 2: Agents with Capabilities
+│   ├── HandsOnTasks/
+│   │   ├── 1.CodeInterpreter-DJ.md
+│   │   ├── 2.AgentToAccessIndex.md
+│   │   └── Task 1.md
+│   ├── Slides/
+│   └── UseCases/
+│
+├── Day3/                      # Day 3: SDK & Advanced Agent Development
+│   ├── HandsOnTasks/
+│   │   ├── 1.AISearch/                    # AI Search with SDK
+│   │   │   ├── search_queries.ipynb
+│   │   │   ├── setup_search_index.ipynb
+│   │   │   └── upload_to_blob.ipynb
+│   │   ├── 2.ConnectToAIProgramatically/  # SDK Connection Methods
+│   │   │   ├── ConnectToProjectClient.py
+│   │   │   ├── ConnectViaAPIKey.py
+│   │   │   └── ConnectViaBearerToken.py
+│   │   ├── 3.InteractWithAIAgents/        # Agent Interaction Tasks
+│   │   │   ├── azure_client.py
+│   │   │   ├── task_1_create_client.py
+│   │   │   ├── task_2_create_agent.py
+│   │   │   └── task_3_agent_communication.py
+│   │   ├── 4.AzureOpenAIChatClient_devui.py  # Agent Framework DevUI
+│   │   ├── 5.Sequential_streaming.py         # Workflow Streaming
+│   │   └── 6.CreateLanggraphWorkflow/        # LangGraph Workflows
+│   │       ├── task_1_workflow.py
+│   │       └── task_2_workflow.py
+│   ├── Slides/
+│   └── UseCases/
+│
+├── Day4/                      # Day 4: Technical Deep Dive
+│   ├── HandsOnTasks/
+│   │   ├── 1.BuildFastAPIServer/          # FastAPI Implementation
+│   │   │   ├── task_1-5_server.py         # Progressive server builds
+│   │   │   └── test_task_*.py             # Test files
+│   │   ├── 2.BuildStreamlitServer/        # Streamlit Integration
+│   │   │   ├── task_1-4_app.py            # Progressive app builds
+│   │   │   └── test_task_*.py             # Test files
+│   │   └── 3.BuildAgentsWithMCP/          # Model Context Protocol
+│   │       ├── client.py                  # MCP Client with Azure AI
+│   │       ├── server.py                  # MCP Server with tools
+│   │       └── README.md                  # MCP detailed instructions
+│   ├── Slides/
+│   └── UseCases/
+│
+└── images/                    # Documentation images
 ```
 
 ---
@@ -67,11 +128,11 @@ revise this after completion of all the contents
 
 ```powershell
 # Clone the laboratory repository
-git clone https://github.com/djdean/AI-Application-Lab.git
-cd AI-Application-Lab
+git clone <repository-url>
+cd Pfizer-AI-labs
 
 # Verify Python version (if not using DevContainer)
-python --version  # Python 3.12 preferred
+python --version  # Python 3.10+ required
 ```
 
 ### Step 2: Choose Your Development Environment
@@ -91,12 +152,12 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-> **💡 Note:** This project uses pip-tools for dependency management to ensure consistent installations across all environments. All required packages (including pip-tools) are automatically installed from `requirements.txt`.
-> 
-> **📝 For Maintainers:** See [README_DEPENDENCY_MANAGEMENT.md](README_DEPENDENCY_MANAGEMENT.md) for instructions on updating dependencies.
+> **💡 Note:** This project uses pip for dependency management to ensure consistent installations across all environments.
+>
+> To update dependencies, edit `requirements.txt` directly and run `pip install -r requirements.txt`.
 
 
-### Step 4: Microsoft Foundry Setup
+### Step 3: Microsoft Foundry Setup
 
 1. **Create Microsoft Foundry Resource and Project**
    
@@ -148,7 +209,7 @@ pip install -r requirements.txt
       <img src="images/foundry-connection.png" width="75%"/>
   
 5. **Configure Environment Variables**
-   - Copy `.env.example` to `.env` in the root directory and update values accordingly
+   - Copy `.env.template` to `.env` in the root directory and update values accordingly
    - This repository expects the `.env` file to be in the root directory, if you want to store it elsewhere or name it something else, update the `load_dotenv()` calls in notebooks
    - Many of the Environment Variables needed can be found in the Overview tab of your Microsoft Foundry project or the connected resources in the Management Center tab
    - For example, AZURE_OPENAI variables-
