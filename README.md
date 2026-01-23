@@ -57,68 +57,106 @@ This comprehensive laboratory transforms you from an AI enthusiast into a Micros
 ## 📁 Repository Structure
 
 ```
-Pfizer-AI-labs/
-├── .env.template              # Environment variables template (copy to .env)
-├── .gitignore                 # Git ignore rules
-├── README.md                  # This file
-├── requirements.txt           # Python dependencies
+AI-Application-Lab/
+├── .env.template                          # Environment variables template (copy to .env)
+├── README.md                              # This file
+├── requirements.txt                       # Python dependencies
 │
-├── Day1/                      # Day 1: Foundry Basics & Prompt Engineering
-│   ├── HandsOnTasks/
+├── Day 1/                                 # Day 1: Foundry Basics & Prompt Engineering
+│   ├── Hands On Tasks/
 │   │   ├── 1.PromptEngineering.md
 │   │   ├── 2.CreatingAISearchInPortal.md
-│   │   ├── 3.PlaygroundToAccessIndex.md
-│   │   └── Task 1.md
+│   │   └── 3.PlaygroundToAccessIndex.md
 │   ├── Slides/
-│   └── UseCases/
+│   └── Use Cases/
 │
-├── Day2/                      # Day 2: Agents with Capabilities
-│   ├── HandsOnTasks/
-│   │   ├── 1.CodeInterpreter-DJ.md
-│   │   ├── 2.AgentToAccessIndex.md
-│   │   └── Task 1.md
+├── Day 2/                                 # Day 2: Agents with Capabilities
+│   ├── Hands On Tasks/
+│   │   ├── 1.CreateAIAgent.md
+│   │   ├── 2.AddCodeInterpreter.md
+│   │   └── 3.AgentToAccessIndex.md
 │   ├── Slides/
-│   └── UseCases/
+│   └── Use Cases/
 │
-├── Day3/                      # Day 3: SDK & Advanced Agent Development
-│   ├── HandsOnTasks/
+├── Day 3/                                 # Day 3: SDK & Advanced Agent Development
+│   ├── Hands on Tasks/
 │   │   ├── 1.AISearch/                    # AI Search with SDK
+│   │   │   ├── README.md
+│   │   │   ├── data/
 │   │   │   ├── search_queries.ipynb
 │   │   │   ├── setup_search_index.ipynb
 │   │   │   └── upload_to_blob.ipynb
 │   │   ├── 2.ConnectToAIProgramatically/  # SDK Connection Methods
+│   │   │   ├── ConnectToProjectClient.md
 │   │   │   ├── ConnectToProjectClient.py
+│   │   │   ├── ConnectViaAPIKey.md
 │   │   │   ├── ConnectViaAPIKey.py
+│   │   │   ├── ConnectViaBearerToken.md
 │   │   │   └── ConnectViaBearerToken.py
 │   │   ├── 3.InteractWithAIAgents/        # Agent Interaction Tasks
+│   │   │   ├── overview.md
 │   │   │   ├── azure_client.py
 │   │   │   ├── task_1_create_client.py
+│   │   │   ├── task_1.md
 │   │   │   ├── task_2_create_agent.py
-│   │   │   └── task_3_agent_communication.py
+│   │   │   ├── task_2.md
+│   │   │   ├── task_3_agent_communication.py
+│   │   │   └── task_3.md
 │   │   ├── 4.AzureOpenAIChatClient_devui.py  # Agent Framework DevUI
 │   │   ├── 5.Sequential_streaming.py         # Workflow Streaming
 │   │   └── 6.CreateLanggraphWorkflow/        # LangGraph Workflows
+│   │       ├── README.md
+│   │       ├── overview.md
 │   │       ├── task_1_workflow.py
-│   │       └── task_2_workflow.py
+│   │       ├── task_1.md
+│   │       ├── task_2_workflow.py
+│   │       └── task_2.md
 │   ├── Slides/
-│   └── UseCases/
+│   └── Use Cases/
 │
-├── Day4/                      # Day 4: Technical Deep Dive
-│   ├── HandsOnTasks/
+├── Day 4/                                 # Day 4: Technical Deep Dive
+│   ├── Hands On Tasks/
 │   │   ├── 1.BuildFastAPIServer/          # FastAPI Implementation
-│   │   │   ├── task_1-5_server.py         # Progressive server builds
-│   │   │   └── test_task_*.py             # Test files
+│   │   │   ├── overview.md
+│   │   │   ├── start_server.py
+│   │   │   ├── task_1_server.py
+│   │   │   ├── task_1.md
+│   │   │   ├── task_2_server.py
+│   │   │   ├── task_2.md
+│   │   │   ├── task_3_server.py
+│   │   │   ├── task_3.md
+│   │   │   ├── task_4_server.py
+│   │   │   ├── task_4.md
+│   │   │   ├── task_5_server.py
+│   │   │   ├── task_5.md
+│   │   │   ├── test_cors.html
+│   │   │   ├── test_task_1.py
+│   │   │   ├── test_task_2.py
+│   │   │   ├── test_task_3.py
+│   │   │   ├── test_task_4.py
+│   │   │   └── test_task_5.py
 │   │   ├── 2.BuildStreamlitServer/        # Streamlit Integration
-│   │   │   ├── task_1-4_app.py            # Progressive app builds
-│   │   │   └── test_task_*.py             # Test files
+│   │   │   ├── overview.md
+│   │   │   ├── task_1_app.py
+│   │   │   ├── task_1.md
+│   │   │   ├── task_2_app.py
+│   │   │   ├── task_2.md
+│   │   │   ├── task_3_app.py
+│   │   │   ├── task_3.md
+│   │   │   ├── task_4_app.py
+│   │   │   ├── task_4.md
+│   │   │   ├── test_task_1.py
+│   │   │   ├── test_task_2.py
+│   │   │   └── test_task_4.py
 │   │   └── 3.BuildAgentsWithMCP/          # Model Context Protocol
+│   │       ├── README.md
 │   │       ├── client.py                  # MCP Client with Azure AI
-│   │       ├── server.py                  # MCP Server with tools
-│   │       └── README.md                  # MCP detailed instructions
+│   │       └── server.py                  # MCP Server with tools
 │   ├── Slides/
-│   └── UseCases/
+│   └── Use Cases/
+│       └── Placeholder
 │
-└── images/                    # Documentation images
+└── images/                                # Documentation images
 ```
 
 ---
