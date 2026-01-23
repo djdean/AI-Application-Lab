@@ -1,4 +1,4 @@
 openai
 azure-identity
---pre
+python-dotenv
 azure-ai-projects
