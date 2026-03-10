@@ -1,0 +1,228 @@
+Below is a **clean extraction of all meaningful context** from the two uploaded documents, organized so you can **reuse it directly** (for Section B, appeals, explanations, or summaries). I am not interpreting or advising yet—this is a **faithful extraction + structured consolidation** of what the documents say.
+
+---
+
+## 📄 Document 1
+
+### *Department of Justice – New Process for Student Loan Bankruptcy Discharge*
+
+
+
+### 🔹 Purpose & Background
+
+* Student loans are treated differently in bankruptcy.
+* To discharge student loans, borrowers must prove **“undue hardship”** in a separate **adversary proceeding**.
+* Historically, this process has been difficult and inconsistent.
+* DOJ + Department of Education introduced a **new standardized process** to:
+
+  * Improve transparency
+  * Reduce debtor burden
+  * Increase consistency
+  * Allow DOJ attorneys to **support discharge** when appropriate
+
+---
+
+### 🔹 New DOJ Process (High-Level)
+
+* Borrowers complete an **attestation form**
+* DOJ + Department of Education jointly review the information
+* DOJ evaluates whether to:
+
+  * Support **full discharge**
+  * Support **partial discharge**
+  * Oppose discharge
+* **Final decision still belongs to the bankruptcy judge**
+
+---
+
+### 🔹 Undue Hardship Evaluation Framework
+
+The DOJ evaluates **three factors**, aligned with court standards:
+
+---
+
+#### 1️⃣ Present Ability to Pay
+
+* DOJ uses **IRS expense standards**
+* Compares:
+
+  * Debtor income
+  * Necessary living expenses
+* If expenses ≥ income → **No present ability to pay**
+
+---
+
+#### 2️⃣ Future Ability to Pay
+
+DOJ assesses whether the inability to pay is **likely to persist**.
+
+A **presumption of continued hardship** applies if factors such as:
+
+* Retirement age
+* Disability or chronic injury
+* Long-term unemployment
+* Lack of degree
+* Extended repayment history
+  are present.
+
+If not, DOJ evaluates evidence case-by-case.
+
+---
+
+#### 3️⃣ Good Faith Efforts
+
+Focuses on **objective behavior**, not punishment.
+
+DOJ considers:
+
+* Efforts to earn income
+* Expense management
+* Attempts to repay or seek repayment options
+
+Important clarifications:
+
+* ❌ Past non-payment alone does **not** disqualify a borrower
+* ❌ Failure to enroll in Income-Driven Repayment (IDR) does **not** automatically disqualify
+* ✅ Reasonable explanations for non-enrollment are accepted
+* ✅ Contacting loan servicers or DOE weighs positively
+
+---
+
+## 📘 Document 2
+
+### *Student Loan Guide – Federal vs Private Loans (Credible)*
+
+
+
+---
+
+## 🔹 Key Takeaways
+
+* **Federal loans should always be applied for first**
+* Private loans should only be used **after federal aid is maximized**
+* About **30% of adults** who pursued higher education borrowed money
+
+---
+
+## 🔹 Federal vs Private Student Loans (Core Differences)
+
+| Category         | Federal Loans                | Private Loans                        |
+| ---------------- | ---------------------------- | ------------------------------------ |
+| Lender           | U.S. Department of Education | Banks, credit unions, online lenders |
+| Interest Rates   | Fixed (6.53%–9.08%)          | Fixed or variable (3.39%–17.99%)     |
+| Credit Check     | ❌ Not required (most)        | ✅ Required                           |
+| Borrowing Limits | Capped by academic level     | Up to cost of attendance             |
+| Repayment        | 10–25 years                  | 5–20 years                           |
+| Protections      | IDR, deferment, forgiveness  | Very limited                         |
+| Forgiveness      | Possible                     | None                                 |
+
+---
+
+## 🔹 Federal Student Loan Eligibility
+
+To qualify, a borrower must:
+
+* Be a U.S. citizen or eligible non-citizen
+* Have a valid SSN
+* Be enrolled in an eligible degree or certificate program
+* Maintain satisfactory academic progress
+* Have a high school diploma or equivalent
+* Not be in default on federal aid
+* Submit FAFSA annually
+
+⚠️ **No income cutoff** exists for FAFSA eligibility.
+
+---
+
+## 🔹 FAFSA Process (Federal Loans)
+
+1. Create **FSA ID**
+2. Complete FAFSA (opens ~Oct 1 annually)
+3. Sign & submit FAFSA
+4. Review financial aid award letter
+5. Accept aid (grants → subsidized → unsubsidized → PLUS)
+6. Complete entrance counseling & promissory note (first-time borrowers)
+
+---
+
+## 🔹 Types of Federal Aid
+
+### Need-Based
+
+* Pell Grants (no repayment)
+* Direct Subsidized Loans
+* FSEOG grants
+* Federal Work-Study
+
+### Non–Need-Based
+
+* Direct Unsubsidized Loans
+* Direct PLUS Loans (credit check required)
+
+---
+
+## 🔹 Private Student Loans
+
+### Eligibility Criteria
+
+* U.S. citizen or permanent resident
+* SSN
+* Age 18+
+* Good credit score (often ~670+)
+* Minimum income (or cosigner)
+* Enrollment at least half-time
+
+### Key Characteristics
+
+* Credit & income heavily weighted
+* Often require a cosigner
+* No forgiveness programs
+* Fewer hardship protections
+* Should be **last-resort financing**
+
+---
+
+## 🔹 Private Loan Evaluation Factors
+
+* Credit score & history
+* Income
+* Debt-to-income (DTI) ratio
+* School & program eligibility
+* Loan amount and term length
+
+---
+
+## 🔹 Application & Disbursement
+
+* Funds are sent **directly to the school**
+* Any excess funds go to the borrower for qualified expenses
+* Denials must include reason
+* Appeals or cosigners may be options
+
+---
+
+## 🎯 Why This Context Matters for You
+
+* **Document 1** directly supports **bankruptcy discharge arguments**
+* **Document 2** establishes:
+
+  * Loan type distinctions
+  * Borrower behavior norms
+  * Why federal protections matter
+* Together, they form a **strong factual foundation** for:
+
+  * Section B explanations
+  * Hardship narratives
+  * Good-faith arguments
+  * Appeal or discharge justification
+
+---
+
+If you want, next I can:
+
+* ✅ Map this **directly to Section B questions**
+* ✅ Draft **sample language using DOJ’s criteria**
+* ✅ Highlight **which facts help vs hurt**
+* ✅ Translate this into a **plain-English appeal narrative**
+
+Just tell me what’s next.
