@@ -8,6 +8,7 @@ from typing import Optional, List, Dict
 from dataclasses import dataclass
 from enum import Enum
 from azure.ai.projects import AIProjectClient
+from azure.ai.agents.aio import AgentsClient
 from azure.ai.agents.models import MessageRole
 from azure.identity import DefaultAzureCredential
 
@@ -60,6 +61,9 @@ class AzureAIFoundryClient:
             self.client = AIProjectClient(
                 endpoint=self.config.endpoint, credential=self.credential
             )
+            self.agents_client = AgentsClient(
+                endpoint=self.config.endpoint, credential=self.credential
+            )
             logger.info("Successfully created Azure AI Projects client")
         except Exception as e:
             logger.error(f"Failed to create Azure AI Projects client: {e}")
@@ -78,7 +82,8 @@ class AzureAIFoundryClient:
             return False
 
         try:
-            thread = await self.client.agents.threads.create()
+
+            thread = await self.agents_client.threads.create()
             self.thread_id = thread.id
             logger.info(f"Conversation started with thread ID: {self.thread_id}")
             return True
@@ -106,16 +111,16 @@ class AzureAIFoundryClient:
 
         try:
             # Create message in thread
-            await self.client.agents.messages.create(
+            await self.agents_client.messages.create(
                 thread_id=self.thread_id, role=MessageRole.USER, content=message
             )
 
             # Create and process a run
-            run = await self.client.agents.runs.create_and_process(
+            run = await self.agents_client.runs.create_and_process(
                 thread_id=self.thread_id, agent_id=self.config.agent_id
             )
 
-            messages = self.client.agents.messages.list(
+            messages = self.agents_client.messages.list(
                 thread_id=self.thread_id, order=ListSortOrder.ASCENDING.value
             )
             return await self._process_messages_response(messages, run.id)
@@ -209,7 +214,7 @@ class AzureAIFoundryClient:
             self.thread_id = thread_id
 
         try:
-            messages = self.client.agents.messages.list(
+            messages = self.agents_client.messages.list(
                 thread_id=self.thread_id, order=ListSortOrder.ASCENDING.value
             )
 
@@ -243,7 +248,7 @@ class AzureAIFoundryClient:
 
         try:
             # Use the Azure AI Projects SDK method to get file content
-            result = await self.client.agents.files.get_content(file_id)
+            result = await self.agents_client.files.get_content(file_id)
             return await self._process_file_result(result)
 
         except Exception as e:
@@ -283,18 +288,17 @@ class AzureAIFoundryClient:
 
         try:
             # Create agent with specified configuration
-            agent = self.client.agents.create_agent(
+            agent = await self.agents_client.create_agent(
                 model=model,
                 name=name,
                 instructions=instructions,
-                tools=tools or []
             )
             
             logger.info(f"Successfully created agent: {agent.id}")
             logger.info(f"  Name: {agent.name}")
             logger.info(f"  Model: {agent.model}")
             logger.info(f"  Instructions: {agent.instructions}")
-            
+
             return agent.id
 
         except Exception as e:
@@ -308,7 +312,7 @@ class AzureAIFoundryClient:
             return None
 
         try:
-            agent = self.client.agents.get_agent(agent_id)
+            agent = await self.agents_client.get_agent(agent_id)
             
             logger.info(f"Agent details:")
             logger.info(f"  ID: {agent.id}")
@@ -330,7 +334,7 @@ class AzureAIFoundryClient:
             return False
 
         try:
-            self.client.agents.delete_agent(agent_id)
+            await self.agents_client.delete_agent(agent_id)
             logger.info(f"Successfully deleted agent: {agent_id}")
             return True
 
