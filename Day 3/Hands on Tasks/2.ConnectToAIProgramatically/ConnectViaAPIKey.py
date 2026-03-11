@@ -22,7 +22,7 @@ Prerequisites:
 
 import os
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import AzureOpenAI
 
 # Load environment variables from .env file
 load_dotenv()
@@ -71,8 +71,9 @@ def main():
     # STEP 3: Create OpenAI client with API key authentication
     # This uses direct API key authentication - simpler but less secure than managed identity
     # NOTE: We're loading the key from .env, which is much better than hardcoding it!
-    client = OpenAI(
-        base_url=endpoint,
+    client = AzureOpenAI(
+        api_version=api_version,
+        azure_endpoint=endpoint,
         api_key=openai_key,
     )
     print("✅ Connected successfully!\n")
